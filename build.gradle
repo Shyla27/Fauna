@@ -1,4 +1,4 @@
-apply plugins {
+ plugins {
     id 'java'
     id 'application'
 }
@@ -14,11 +14,7 @@ applicationName = "Fauna"
 repositories {
     jcenter()
 }
-test { 
-    testLogging { 
-        exceptionFormat = 'full' events "passed", "skipped", "failed" 
-    } 
-}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "com.sparkjava:spark-core:2.6.0"

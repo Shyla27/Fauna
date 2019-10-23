@@ -1,35 +1,37 @@
+import com.sun.org.apache.bcel.internal.generic.AllocationInstruction;
+import com.sun.org.apache.xerces.internal.xni.XMLString;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sightings {
+public class Sightings<Int> {
      private String location;
      private Int id;
      private String rangerName;
 
- public Sighting(String location, String rangerName) {
+ public Sightings(String location, String rangerName) {
     this.location = location;
     this.rangerName = rangerName;
  }
 
-     public getLocation() {
-         return location;
-     }
-      public getId() {
-          return id;
-      }
-      public getName() {
-          return name;
-      }
+    public String getRangerName() {
+        return rangerName;
+    }
+
       
       @Override
-       public boolean equals(Object otherSighting){
-        if (!(otherSighting instanceof Sighting)) {
+       public boolean equals(Object otherSightings){
+        if (!(otherSightings instanceof Sightings)) {
             return false;
         } else {
-            Sighting newSighting = (Sighting) otherSighting;
-            return this.getLocation().equals(newSighting.getLocation()) &&
-                    this.getRangerName().equals(newSighting.getRangerName());
+            Sightings newSightings = (Sightings) otherSightings;
+            return this.getLocation().equals(newSightings.getLocation()) &&
+                    this.getRangerName().equals(newSightings.getRangerName());
         }
+    }
+
+    private String getLocation() {
+        return location;
     }
 
 }

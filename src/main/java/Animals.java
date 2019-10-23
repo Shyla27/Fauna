@@ -1,16 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Animals {
     private String name;
     private String health;
     private String age;
-    private Int id;
 
 
-    public Int getId() {
+    public <Int> Int getId(Int id) {
         return id;
     }
+
     public String getName() {
         return name;
     }
