@@ -20,5 +20,10 @@ public class AnimalTest {
     public void Animal_instantiatesWithSightingId_Int() {
         assertEquals(1, testAnimal.getSightingId());
     }
-    
+    @Test 
+    public void equals_returnsTrueIfNameAndSightingIdAreSame_true() {
+        Animal anotherAnimal = new Animal("Mufasa" 1)
+        assertEquals(testAnimal.equals(anotherAnimal));
+    }
+     
 }
