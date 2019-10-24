@@ -1,47 +1,57 @@
-**WILDLIFE TRACKER**
+ ###  FAUNA
 
-This is an app that enables forest rangers monitor wildlife in a forest/park efficiently and effectively.
+ ### Author 
+ 
+ ### Shyla Bernice ###
 
-**DEVELOPED BY**
+### About 
+  Application that allows Rangers to track wildlife sightings in the area.
 
-Mark Mwago
-
-**Description**
-
-The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. You have been asked to build an application that allows Rangers to track wildlife sightings in the area
-
-**Technologies and frame works Used**
-
-1. java 11
-2. spark core 2.12
-3. Gradle 4.10
-4. HandlebarsTemplate Engine
-5. Junit 5
-6. Postgres database
-
-**Known Bugs**
-
-There are no known bugs at the moment.
-
-**Usage**
-
-To interact with the app, open the link at the top on another tab.
-You can also clone the repo to your desktop and recreate databases by:
-
-~~~~CREATE DATABASE wildlife_tracker;
-\c wildlifetracker;
-CREATE TABLE animals(id serial PRIMARY KEY, name varchar, health varchar, age varchar, type varchar);
-CREATE TABLE animals(id serial PRIMARY KEY,ranger_name varchar, location varchar, animal_id int, timestamp timestap);
-
-CREATE TABLE endangered(id serial PRIMARY KEY,ranger_name varchar, location varchar, animal_id int, timestamp timestap);
-CREATE DATABASE CREATE DATABASE wildlifetracker_test WITH TEMPLATE wildlifetracker;
+### Set it up 
 
 
-**CONTACT**
+* To run the application, first install the java development kit from `https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
+* Next clone the project using `$ git clone https://github.com/Shyla27/Fauna.git` to your preferred folder.
 
-To work with me, you can get me at markmwago@gmail.com
+* Open the project with Intellij or any text editor 
 
+* On your terminal type `gradle run` to run the app from your local machine.
+* Open `localhost:4567 ` in your browser; 
 
-**LICENSE**
-MIT 
+ ### Bugs 
+ I had issues with routing and also testing  and opted to not implement DAO and databases\
+ Deployment to heroku 
+ 
+ 
+ ### CONTACT ME 
+ If you have any Questions please reach out to me via `sheilabernicew@gmail.com` or `+254 795 811714`
+ 
+  ### Tech used 
+* Java 
+* Git 
+* Gradle
+* Spark  
+* Heroku in deployment 
+
+## MIT LICENSE
+
+Copyright (c) 2019 Shyla_B
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
