@@ -1,0 +1,80 @@
+ {{#partial "content"}}
+<!--    <section class="new-animal">-->
+<!--        <section class="normal-animal " id="normal">-->
+            <h3>All Species</h3>
+
+
+<form action="/sightings" method="post">
+
+<!-- Grid row -->
+<div class="row">
+    <!-- Grid column -->
+    <div class="col-md-12">
+        <!-- Material input -->
+        <div class="md-form form-group">
+            <input type="text" class="form-control" id="" placeholder="Specie's Name">
+            <label for="inputAddressMD">Species/label>
+        </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-12">
+        <!-- Material input -->
+        <div class="md-form form-group">
+            <input type="text" class="form-control" id="" placeholder="Ranger Name">
+            <label for="inputAddress2MD">Ranger Name </label>
+        </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-12">
+        <!-- Material input -->
+        <div class="md-form form-group">
+            <input type="text" class="form-control" id="" placeholder="Location">
+            <label for="inputAddress2MD">Location </label>
+        </div>
+    </div>
+    <!-- Grid column -->
+</div>
+
+                <div class="age">
+                    <p>Specie's Age</p>
+                    <select name="animalAge" id="animalAge">
+                        <option value="newborn">Newborn</option>
+                        <option value="young">Young</option>
+                        <option value="adult">Adult</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="health">
+                    <p>Animal's Health</p>
+                    <select name="animalHealth" id="animalHealth">
+                        <option value="weak">Weak</option>
+                        <option value="okay"> Okay</option>
+                        <option value="healthy">Healthy</option>
+                    </select>
+                </div>
+                <hr>
+
+
+
+
+
+                <div class="endangered">
+                    <p>Animal species</p>
+                    <select name="animalType" id="animalType">
+                        <option value="safe">NonEndangered</option>
+                        <option value="endangered">Endangered</option>
+                    </select>
+                </div>
+                <hr>
+                <button type="submit" class="button">Submit</button>
+
+            </form>
+
+<br>
+
+ {{/partial}}
+
+{{> layout.hbs}}

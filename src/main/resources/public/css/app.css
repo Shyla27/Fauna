@@ -1,0 +1,31 @@
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/images/tiger.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size:28px;
+    }
+
+#button{
+ text-align:center;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:100%;
+
+   }
+   p {
+   color: blue;
+
+   }
+   h {
+   color: teal;
+   }
+   .select {
+   color:  black ;
+   }
