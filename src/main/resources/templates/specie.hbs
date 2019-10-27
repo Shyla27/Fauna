@@ -1,0 +1,17 @@
+<h1>Name: $specie.getName()</h1>
+<hr>
+<h2>Specie population: $specie.getPopulation()</h2>
+<hr>
+<h2>Endangered: $specie.getEndangered()</h2>
+<hr>
+<h2>SightingId: $specie.getSightingId()</h2>
+<h2> Belongs to: $sighting.getLocation()</h2>
+
+
+
+
+<form action="/sightings/$specie.getsightingId()/species/$specie.getId()/delete" method="post">
+  <button type="submit" class="btn btn-danger" id="delete-specie">Delete specie</button>
+</form><br><br>
+
+<a href="/sightings/$sighting.getId()">Return to $sighting.getName()</a>
